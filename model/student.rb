@@ -42,4 +42,13 @@ class Student
    return Student.new(student)
  end
 
+ def self.delete_all()
+   sql = "DELETE FROM students"
+   SqlRunner.run(sql)
+ end
+
+ def full_name()
+   return "#{@first_name} #{@second_name}"
+ end
+
 end

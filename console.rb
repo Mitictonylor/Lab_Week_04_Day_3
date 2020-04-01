@@ -3,6 +3,9 @@ require_relative('./model/student.rb')
 require_relative('./model/house.rb')
 
 
+Student.delete_all
+House.delete_all
+
 house1 = House.new({
   'name' => "Gryffindor",
   'logo' => "https://vignette.wikia.nocookie.net/harrypotter/images/3/3c/Download-1.jpg/revision/latest/top-crop/width/360/height/450?cb=20170414162625&path-prefix=it"

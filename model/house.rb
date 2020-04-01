@@ -42,6 +42,10 @@ def self.find_house_by_id(id)
   return House.new(house)
 end
 
+def self.delete_all()
+  sql = "DELETE FROM houses"
+  SqlRunner.run(sql)
+end
 
 
 
