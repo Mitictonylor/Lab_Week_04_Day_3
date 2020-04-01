@@ -21,6 +21,31 @@ def save()
   @id = SqlRunner.run(sql,values)[0]['id'].to_i
 end
 
+def self.all()
+  sql = "SELECT * FROM houses"
+  all = SqlRunner.run(sql)
+  return all.map{|house| House.new(house)}
+end
+
+def student()
+  sql = "SELECT * FROM students WHERE house_id = $1"
+  values = [@id]
+  all_student = SqlRunner.run(sql,values)
+  return all_student.map{|student| Student.new(student)}
+end
+
+def self.find_house_by_id(id)
+  sql = "SELECT * FROM houses WHERE id = $1"
+  values = [id]
+  house = SqlRunner.run(sql,values)
+  return nil if house == nil
+  return House.new(house)
+end
+
+
+
+
+
 
 
 end

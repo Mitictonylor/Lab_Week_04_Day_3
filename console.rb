@@ -5,19 +5,19 @@ require_relative('./model/house.rb')
 
 house1 = House.new({
   'name' => "Gryffindor",
-  'logo' => "lyon"
+  'logo' => "https://vignette.wikia.nocookie.net/harrypotter/images/3/3c/Download-1.jpg/revision/latest/top-crop/width/360/height/450?cb=20170414162625&path-prefix=it"
   })
 house2 = House.new({
     'name' => "Ravenclaw",
-    'logo' => "Raven"
+    'logo' => "https://www.theshopthatmustnotbenamed.co.uk/img/product/harry-potter-coaster-ravenclaw-crest-blue-5047-600.jpg"
   })
 house3 = House.new({
     'name' => "Hufflepuff",
-    'logo' => "Badger"
+    'logo' => "https://vignette.wikia.nocookie.net/harrypotter/images/0/06/Hufflepuff_ClearBG.png/revision/latest?cb=20161020182518"
     })
 house4 = House.new({
     'name' => "Slytherin",
-    'logo' => "Snake"
+    'logo' => "https://cdn.shopify.com/s/files/1/1943/7257/products/BannerFlag-Slytherin-HarryPotter-Product-_3-4895205600157_grande.jpg?v=1520334092"
       })
 house1.save()
 house2.save()
