@@ -1,14 +1,14 @@
 <form action='/students' method="POST">
-  <label for="first_name">First name:</label>
+  <label for="first_name" class="first">First name:</label>
     <input id="first_name" type="text" name="first_name" required/>
 
-  <label for="second_name">Second name:</label>
+  <label for="second_name" class="first">Second name:</label>
     <input id="second_name" type="text" name="second_name" required/>
 
-  <label for="age">Age:</label>
+  <label for="age" class="age">Age:</label>
     <input id="age" type="number" name="age" required/>
 
-  <label for="House">House:</label>
+  <label for="House" class="house">House:</label>
   <select id="house" name="house_id">
     <% for house in @houses %>
       <option value="<%= house.id %>">
