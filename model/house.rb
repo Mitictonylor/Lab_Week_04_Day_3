@@ -7,7 +7,7 @@ class House
   attr_reader :id
 
   def initialize(house)
-    @id = house['id'].to_i if customer['id']
+    @id = house['id'].to_i if house['id']
     @name = house['name']
     @logo = house['logo']
   end
