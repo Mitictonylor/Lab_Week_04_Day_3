@@ -3,7 +3,7 @@ require_relative('./student.rb')
 
 class House
 
-  attr_accessor :name, :logo
+  attr_accessor :name, :logo 
   attr_reader :id
 
   def initialize(house)

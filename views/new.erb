@@ -1,13 +1,18 @@
-<form action='/students' method="POST">
+<div class= "form-wrapper">
+<form class="form" action='/students' method="POST">
+  <div class="form-element">
   <label for="first_name" class="first">First name:</label>
     <input id="first_name" type="text" name="first_name" required/>
-
+</div>
+  <div class="form-element">
   <label for="second_name" class="first">Second name:</label>
     <input id="second_name" type="text" name="second_name" required/>
-
+    </div>
+  <div class="form-element">
   <label for="age" class="age">Age:</label>
     <input id="age" type="number" name="age" required/>
-
+    </div>
+  <div class="form-element">
   <label for="House" class="house">House:</label>
   <select id="house" name="house_id">
     <% for house in @houses %>
@@ -16,6 +21,7 @@
       </option>
     <% end %>
   </select>
-
-  <input type='submit' value="Apply"/>
+</div>
+<button class="form-button" type="submit" name="button">APPLY</button>
 </form>
+</div>

@@ -1,4 +1,5 @@
 require_relative('../db/sql_runner.rb')
+require_relative('./house.rb')
 
 class Student
 
@@ -50,15 +51,18 @@ class Student
    return "#{@first_name} #{@second_name}"
  end
 
- def update()
-   sql = "UPDATE students SET (first_name, second_name, age, house_id) = ($1, $2, $3, $4) WHERE id = $5"
-   values = [@first_name, @second_name, @age, @house_id, @id]
-   SqlRunner.run(sql, values)
- end
- def delete()
-   sql = "DELETE FROM students where id = $1"
-   values = [@id]
-   SqlRunner.run(sql, values)
- end
+def update()
+  sql = "UPDATE students SET (first_name, second_name, age, house_id)
+   = ($1, $2, $3, $4 ) WHERE id = $5"
+  values = [@first_name, @second_name, @age, @house_id, @id]
+  SqlRunner.run(sql,values)
+end
+
+
+def delete()
+  sql = "DELETE FROM students where id = $1"
+  values = [@id]
+  SqlRunner.run(sql, values)
+end
 
 end

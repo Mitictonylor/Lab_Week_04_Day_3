@@ -1,11 +1,16 @@
+<div class= "student-wrapper">
 <h1 class="head"> ALL THE STUDENTS</h1>
+<div class="student-list">
   <% for student in @students %>
  <p>First Name : <%=student.first_name()%> </p>
  <p>Second Name : <%=student.second_name()%> </p>
  <p>Age :  <%=student.age()%> </p>
  <p>House : <%=student.house().name%> </p>
- <button onclick="window.location.href = '/students/<%=student.id()%>/edit';">EDIT</button>
- <button onclick="window.location.href = '/students/<%=student.id()%>/delete';">DELETE</button>
+ <button class="button" onclick="window.location.href = '/students/<%=student.id()%>/edit';">EDIT</button>
+ <button class="button" onclick="window.location.href = '/students/<%=student.id()%>/delete';">DELETE</button>
 
  <hr>
+
  <% end %>
+</div>
+</div>

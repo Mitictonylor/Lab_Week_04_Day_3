@@ -1,14 +1,133 @@
+@font-face {
+  font-family: MagicSchoolOneimport;
+  src:url("../font/magic-school/MagicSchoolOne.ttf");
+}
 body{
-  background-image: url("https://cdn.gbposters.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/p/fp4759-harry-potter-hogwarts-day_1.jpg");
-  background-color: #cccccc;
-  font-family: "sofia";
+  background-image: url("hogwarts.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  user-select: none;
+  display: block;
+  text-align: center;
+  font-family:  MagicSchoolOneimport;
+}
+.student-list {
+  font-size: 30px;
+  background-color: rgba(	43, 5, 4, 0.5);
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  color:gold
 
 }
+p{
+  padding:0;
+  margin:0;
 }
 
+.button {
+  background-color: #2B0504;
+  color: gold;
+  border: 1px solid ;
+  font-size: 20px;
+  overflow: auto;
+  font-family:  MagicSchoolOneimport
+}
 
+.button:hover {
+  opacity: 60%;
+}
+
+.student-wrapper {
+  display: inline-block;
+  overflow: auto;
+  left:50%
+}
 .head{
-  display: flex;
   justify-content: center;
-  color: purple;
+  color: Goldenrod;
+  font-size: 35px
+}
+
+form {
+  background-color: rgba(	43, 5, 4, 0.5);
+  width: 600px;
+  height: 400px;
+}
+
+.form-section {
+  margin: 5px;
+}
+
+.form-wrapper {
+  display: inline-block;
+  overflow: auto;
+}
+
+label {
+  margin: 3px;
+  width: 25%;
+  font-size: 40px;
+  color: gold
+
+}
+
+input {
+  width: 55%;
+  float:right;
+  font-size: 30px;
+  background-color: #2B0504;
+  color: gold;
+  overflow: auto;
+  margin: 3px;
+  height: 35px;
+  font-family:  MagicSchoolOneimport
+}
+
+select {
+  width: 56%;
+  float:right;
+  font-size: 30px;
+  background-color: #2B0504;
+  color: gold;
+  overflow: auto;
+  margin: 3px;
+  height: 50px;
+  font-family:  MagicSchoolOneimport
+}
+
+.form-button {
+  background-color: #2B0504;
+  margin-top: 50px;
+  width: 30%;
+  height:50 px;
+  color: gold;
+  border: 1px solid ;
+  font-size: 20px;
+  float:none;
+  overflow: auto;
+  font-family:  MagicSchoolOneimport
+}
+
+.form-button:hover {
+  opacity: 70%;
+}
+ a{
+  text-align: center;
+
+  color: Goldenrod;
+  overflow: auto;
+  margin: 3px;
+  font-size: 30px;
+  font-family:  MagicSchoolOneimport
+}
+
+.created{
+  text-align: center;
+  color: Goldenrod;
+  overflow: auto;
+  margin: 3px;
+  font-size: 45px;
+  font-family:  MagicSchoolOneimport
 }
